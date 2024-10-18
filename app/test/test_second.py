@@ -4,13 +4,11 @@ __date__ = '18.10.2024'
 import allure
 import pytest
 
-from app.main import Application
 
-
-@pytest.mark.env
+@pytest.mark.
 @allure.title('')
 @allure.link(url='', name='Test description')
-def test_first():
+def test_second():
     """None
 
     **Command example**::
@@ -27,8 +25,5 @@ def test_first():
         - None
     """
 
-    client = Application()
-
-    with allure.step('2 + 2 ==4'):
-        add_result = client.add(2, 2)
-        assert add_result == 4
+    with allure.step('Title'):
+        pass
