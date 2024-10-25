@@ -7,6 +7,7 @@ import random
 
 class Application:
     def add(self, a: int, b: int) -> int:
+        """Return summ of parameters"""
         return a + b
 
     def get_items_random_order(self) -> tuple:
