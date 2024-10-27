@@ -34,6 +34,5 @@ def test_addition(val_1, val_2, exp_result):
     client = Application()
 
     with allure.step(f'{val_1} + {val_2} == {exp_result}'):
-        'test value : {}'.format(val_1)
         add_result = client.add(val_1, val_2)
         assert add_result == exp_result
